@@ -1,55 +1,311 @@
-<h1>Welcome to YouTube Thumbnail Maker</h1>
-<p>Create amazing thumbnails for your YouTube videos!</p>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>YouTube Thumbnail Maker</title>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="/icon.svg" alt="Logo" class="logo-img">
+            <span>THUMBNAIL MAKER</span>
+        </div>
+        <div class="nav-links">
+            <a href="#pricing">Pricing</a>
+            <a href="#login">Login</a>
+            <a href="#register">Register</a>
+            <select class="language-select">
+                <option>English</option>
+            </select>
+        </div>
+    </div>
 
-<div class="features">
-  <h2>Features coming soon:</h2>
-  <ul>
-    <li>Custom thumbnail generation</li>
-    <li>Multiple template options</li>
-    <li>Text overlay customization</li>
-    <li>Image effects and filters</li>
-  </ul>
-</div>
+    <div class="main-content">
+        <h1>The world's most creative YouTube thumbnail maker</h1>
+        <p class="subtitle">Easily create eye-catching thumbnails for your YouTube videos with our powerful tools</p>
 
-<style>
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  line-height: 1.6;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 2rem;
-  background: #f5f5f5;
-}
+        <div class="upload-box">
+            <div class="placeholder-box">
+                <div class="placeholder-content">
+                    <div class="placeholder-x"></div>
+                    <p>Click here to upload your image</p>
+                    <span class="format-info">Supports JPG, PNG (Max 5MB)</span>
+                </div>
+            </div>
+        </div>
 
-h1 {
-  color: #2c3e50;
-  text-align: center;
-  margin-bottom: 2rem;
-}
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🔒</div>
+                <h3>Secure</h3>
+                <p>Your thumbnails and data are encrypted and never stored without permission</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>Fast</h3>
+                <p>Generate perfect thumbnails in seconds with our optimized tools</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎯</div>
+                <h3>Professional</h3>
+                <p>Create thumbnails that stand out and drive more clicks</p>
+            </div>
+        </div>
 
-.features {
-  background: white;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
+        <div class="pricing-section">
+            <div class="pricing-card">
+                <h3>Anonymous</h3>
+                <p>Quick thumbnails without signup</p>
+                <ul>
+                    <li>✓ 3 thumbnails per day</li>
+                    <li>✓ Basic templates</li>
+                    <li>✓ Standard quality</li>
+                </ul>
+                <div class="price">Free</div>
+            </div>
+            <div class="pricing-card featured">
+                <h3>Registered</h3>
+                <p>Perfect for content creators</p>
+                <ul>
+                    <li>✓ 15 thumbnails per day</li>
+                    <li>✓ Premium templates</li>
+                    <li>✓ HD quality</li>
+                </ul>
+                <div class="price">Free</div>
+                <button class="register-btn">Register</button>
+            </div>
+            <div class="pricing-card">
+                <h3>Subscribe</h3>
+                <p>For professional YouTubers</p>
+                <ul>
+                    <li>✓ Unlimited thumbnails</li>
+                    <li>✓ Custom templates</li>
+                    <li>✓ Priority support</li>
+                </ul>
+                <button class="subscribe-btn">Register</button>
+            </div>
+        </div>
 
-h2 {
-  color: #34495e;
-  margin-bottom: 1rem;
-}
+        <div class="need-more">
+            <h3>Need something special?</h3>
+            <p>We provide custom solutions for channels with specific requirements. Let us know how we can help!</p>
+            <button class="contact-btn">Contact Us</button>
+        </div>
+    </div>
 
-ul {
-  list-style-type: none;
-  padding: 0;
-}
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f8f9fa;
+            color: #333;
+        }
 
-li {
-  padding: 0.5rem 0;
-  border-bottom: 1px solid #eee;
-}
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
 
-li:last-child {
-  border-bottom: none;
-}
-</style> 
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: bold;
+            color: #9B1829;
+        }
+
+        .logo-img {
+            height: 32px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .main-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 3rem;
+        }
+
+        .upload-box {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 3rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .placeholder-box {
+            border: 3px dashed #ddd;
+            border-radius: 8px;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f8f9fa;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .placeholder-box:hover {
+            border-color: #1071CD;
+            background: #f0f7ff;
+        }
+
+        .placeholder-content {
+            text-align: center;
+        }
+
+        .placeholder-x {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 1rem;
+            position: relative;
+        }
+
+        .placeholder-x::before,
+        .placeholder-x::after {
+            content: '';
+            position: absolute;
+            background: #ddd;
+            top: 50%;
+            left: 50%;
+        }
+
+        .placeholder-x::before {
+            width: 2px;
+            height: 100%;
+            transform: translate(-50%, -50%) rotate(45deg);
+        }
+
+        .placeholder-x::after {
+            width: 100%;
+            height: 2px;
+            transform: translate(-50%, -50%) rotate(45deg);
+        }
+
+        .format-info {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .pricing-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .pricing-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .pricing-card.featured {
+            border: 2px solid #1071CD;
+            transform: scale(1.05);
+        }
+
+        .price {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #9B1829;
+            margin: 1rem 0;
+        }
+
+        .register-btn, .subscribe-btn, .contact-btn {
+            background: #1071CD;
+            color: white;
+            border: none;
+            padding: 0.8rem 2rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        .register-btn:hover, .subscribe-btn:hover, .contact-btn:hover {
+            background: #0d5eb9;
+        }
+
+        .need-more {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+            margin-top: 3rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .language-select {
+            padding: 0.5rem;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .pricing-card.featured {
+                transform: none;
+            }
+        }
+    </style>
+</body>
+</html> 
